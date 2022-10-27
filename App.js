@@ -9,10 +9,12 @@ import {Colors} from './constants/colors';
 
 const Stack = createNativeStackNavigator();
 
+import Map from './screens/Map';
+
 export default function App() {
     return (
         <>
-            <StatusBar style={'dark '}/>
+            <StatusBar style={'dark'}/>
             <NavigationContainer>
                 <Stack.Navigator screenOptions={{
                     headerStyle: {
@@ -43,6 +45,9 @@ export default function App() {
                         options={{
                             title: 'Add a new place'
                         }}/>
+                    <Stack.Screen
+                        name={'Map'}
+                        component={Map}/>
                 </Stack.Navigator>
             </NavigationContainer>
         </>
