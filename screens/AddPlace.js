@@ -5,7 +5,7 @@ function AddPlace({navigation}) {
 
     async function createPlaceHandler(place) {
         await insertPlace(place);
-        navigation.navigate('All Places', {place})
+        navigation.navigate('All Places')
     }
 
     return <PlaceForm onCreatePlace={createPlaceHandler}/>
