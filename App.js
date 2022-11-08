@@ -13,6 +13,7 @@ const Stack = createNativeStackNavigator();
 import Map from './screens/Map';
 import {initDB} from './util/database';
 import {useCallback, useEffect, useState} from 'react';
+import PlaceDetails from './screens/PlaceDetails';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -74,6 +75,12 @@ export default function App() {
                     <Stack.Screen
                         name={'Map'}
                         component={Map}/>
+                    <Stack.Screen
+                        name={'Place Details'}
+                        component={PlaceDetails}
+                        options={{
+                            title: 'Place Details'
+                        }}/>
                 </Stack.Navigator>
             </NavigationContainer>
         </>
