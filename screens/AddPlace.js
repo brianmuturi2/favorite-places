@@ -6,7 +6,7 @@ function AddPlace({navigation}) {
         navigation.navigate('All Places', {place})
     }
 
-    return <PlaceForm/>
+    return <PlaceForm onCreatePlace={createPlaceHandler}/>
 }
 
 export default AddPlace;
