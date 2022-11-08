@@ -25,7 +25,7 @@ function Map({navigation}){
         if (!selectedLocation){
             Alert.alert(
                 'No location picked!',
-                'You have to pick a location by tapping on the map first!'
+                'You have to pick a location by tapping on the map first'
             );
             return;
         }
